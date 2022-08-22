@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj": {}
+    "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj": {}
   },
   "projects": {
-    "D:\\HA\\WebDemo\\Domain\\Domain.csproj": {
+    "D:\\HA\\Login\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HA\\WebDemo\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\HA\\Login\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\HA\\WebDemo\\Domain\\Domain.csproj",
+        "projectPath": "D:\\HA\\Login\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\toprate\\.nuget\\packages\\",
-        "outputPath": "D:\\HA\\WebDemo\\Domain\\obj\\",
+        "outputPath": "D:\\HA\\Login\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\toprate\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,14 +92,14 @@
         }
       }
     },
-    "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj": {
+    "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj",
+        "projectUniqueName": "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj",
         "projectName": "Reponsitory",
-        "projectPath": "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj",
+        "projectPath": "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj",
         "packagesPath": "C:\\Users\\toprate\\.nuget\\packages\\",
-        "outputPath": "D:\\HA\\WebDemo\\Reponsitory\\obj\\",
+        "outputPath": "D:\\HA\\Login\\Reponsitory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\toprate\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +116,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\HA\\WebDemo\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\HA\\WebDemo\\Domain\\Domain.csproj"
+              "D:\\HA\\Login\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\HA\\Login\\Domain\\Domain.csproj"
               }
             }
           }

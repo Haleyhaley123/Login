@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RO1MCMvVYYnw+evfY90ONUn8LLb5IbVJ1tSJ93b4Ryb3xoAjNVbqBxck7gA8IntUHNa9XDruPvvbSiVy9GBUbQ==",
+  "dgSpecHash": "zj7CTavYdRVmL0oxhEp5vQ+HfjLS1++sGOplDIpBzzjYAUJ6hmoje1hcSiuTQFW0YTtL/VDXTXje+GVHyC8PXw==",
   "success": true,
-  "projectFilePath": "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj",
+  "projectFilePath": "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\toprate\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\toprate\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

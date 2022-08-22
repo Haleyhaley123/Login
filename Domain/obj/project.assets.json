@@ -9540,11 +9540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HA\\WebDemo\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\HA\\Login\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\HA\\WebDemo\\Domain\\Domain.csproj",
+      "projectPath": "D:\\HA\\Login\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\toprate\\.nuget\\packages\\",
-      "outputPath": "D:\\HA\\WebDemo\\Domain\\obj\\",
+      "outputPath": "D:\\HA\\Login\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\toprate\\AppData\\Roaming\\NuGet\\NuGet.Config",

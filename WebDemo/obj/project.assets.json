@@ -9784,11 +9784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HA\\WebDemo\\WebDemo\\WebDemo.csproj",
+      "projectUniqueName": "D:\\HA\\Login\\WebDemo\\WebDemo.csproj",
       "projectName": "WebDemo",
-      "projectPath": "D:\\HA\\WebDemo\\WebDemo\\WebDemo.csproj",
+      "projectPath": "D:\\HA\\Login\\WebDemo\\WebDemo.csproj",
       "packagesPath": "C:\\Users\\toprate\\.nuget\\packages\\",
-      "outputPath": "D:\\HA\\WebDemo\\WebDemo\\obj\\",
+      "outputPath": "D:\\HA\\Login\\WebDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\toprate\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9805,11 +9805,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\HA\\WebDemo\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\HA\\WebDemo\\Domain\\Domain.csproj"
+            "D:\\HA\\Login\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\HA\\Login\\Domain\\Domain.csproj"
             },
-            "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj": {
-              "projectPath": "D:\\HA\\WebDemo\\Reponsitory\\Reponsitory.csproj"
+            "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj": {
+              "projectPath": "D:\\HA\\Login\\Reponsitory\\Reponsitory.csproj"
             }
           }
         }
