@@ -1,0 +1,17 @@
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Reponsitory.deps.json
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Reponsitory.runtimeconfig.json
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Reponsitory.dll
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Reponsitory.pdb
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Domain.dll
+D:\HA\WebDemo\Reponsitory\bin\Debug\net6.0\Domain.pdb
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.csproj.AssemblyReference.cache
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.GeneratedMSBuildEditorConfig.editorconfig
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.AssemblyInfoInputs.cache
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.AssemblyInfo.cs
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.csproj.CoreCompileInputs.cache
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.csproj.CopyComplete
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.dll
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\refint\Reponsitory.dll
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.pdb
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\Reponsitory.genruntimeconfig.cache
+D:\HA\WebDemo\Reponsitory\obj\Debug\net6.0\ref\Reponsitory.dll

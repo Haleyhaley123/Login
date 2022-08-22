@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDemo", "WebDemo\WebDemo.csproj", "{CC2D31DC-5365-491C-B5AE-BABBDD9907CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{21447081-F826-41DA-A478-C8D26496322B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reponsitory", "Reponsitory\Reponsitory.csproj", "{2413CA18-1101-4602-A376-6860C4D23CB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC2D31DC-5365-491C-B5AE-BABBDD9907CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2D31DC-5365-491C-B5AE-BABBDD9907CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2D31DC-5365-491C-B5AE-BABBDD9907CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2D31DC-5365-491C-B5AE-BABBDD9907CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21447081-F826-41DA-A478-C8D26496322B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21447081-F826-41DA-A478-C8D26496322B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21447081-F826-41DA-A478-C8D26496322B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21447081-F826-41DA-A478-C8D26496322B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2413CA18-1101-4602-A376-6860C4D23CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2413CA18-1101-4602-A376-6860C4D23CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2413CA18-1101-4602-A376-6860C4D23CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2413CA18-1101-4602-A376-6860C4D23CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49BF6389-0B03-422B-BA3E-D6ED844172AA}
+	EndGlobalSection
+EndGlobal
