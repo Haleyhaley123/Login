@@ -11,7 +11,7 @@ namespace WebDemo.Controllers.Account
     [ApiController]
     public class RegisterAccountController : BaseApiController
     {
-        private readonly IUserReponsitory _iUserService;
+        private readonly IUserReponsitory _iUserService;        
         public RegisterAccountController(IUserReponsitory iUserService)
         {
             _iUserService = iUserService;

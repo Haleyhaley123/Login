@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[6.0.7, )"
             },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.7, )"
@@ -155,6 +159,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.7, )"
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -250,6 +258,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.7, )"
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Microsoft.Owin.Security.OAuth": {
               "target": "Package",

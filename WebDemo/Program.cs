@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Reponsitory.Interface;
 using Reponsitory.Reponsitory;
+using System.Configuration;
 using static Domain.DBContext.DBContext;
 
 var builder = WebApplication.CreateBuilder(args);
