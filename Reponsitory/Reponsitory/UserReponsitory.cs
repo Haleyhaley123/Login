@@ -53,7 +53,7 @@ namespace Reponsitory.Reponsitory
             
             try
             {
-                var checkregistation = await _dataBaseContext.RegisterAccounts.FirstOrDefaultAsync(e => e.UserName == request.UserName || e.Email == request.Email || e.Phone == request.Phone);
+                var checkregistation = await _dataBaseContext.RegisterAccounts.FirstOrDefaultAsync(e => e.UserName == request.UserName || e.Email == request.Email);
                 if (checkregistation != null )
                 {
                   return false;                    
@@ -61,7 +61,7 @@ namespace Reponsitory.Reponsitory
                 ScryptEncoder encoder = new ScryptEncoder();
                 RegisterAccount resg = new RegisterAccount
                 {
-                  
+                    UserId = Guid.NewGuid(),
                     UserName = request.UserName,
                     PasswordHash = encoder.Encode(request.PasswordHash),
                     Email = request.Email,
