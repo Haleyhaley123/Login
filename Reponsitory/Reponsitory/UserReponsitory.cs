@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.CompilerServices;
 using Reponsitory.Interface;
+using Scrypt;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +19,16 @@ namespace Reponsitory.Reponsitory
         {
             _dataBaseContext = dataBaseContext;
         }
-        public async Task<bool> LoginAccount(LoginModel request)
+        public async Task<bool> LoginAccount(string username, string password)
         {
             try
             {
-                var checkaccount = await _dataBaseContext.RegisterAccounts.FirstOrDefaultAsync(e => e.UserName == request.UserName);
+                var checkaccount = await _dataBaseContext.RegisterAccounts.Where(e => e.UserName == username).FirstOrDefaultAsync<RegisterAccount>();
                 if (checkaccount != null)
                 {
-                    bool isverifypassword = BCrypt.Net.BCrypt.Verify(checkaccount.PasswordHash, request.Password);
-                    if (isverifypassword)
+                    ScryptEncoder encoder = new ScryptEncoder();
+                    var pass = encoder.Compare(password, checkaccount.PasswordHash);
+                    if (pass)
                     {
                         return true;
                     }
@@ -56,11 +58,12 @@ namespace Reponsitory.Reponsitory
                 {
                   return false;                    
                 }
+                ScryptEncoder encoder = new ScryptEncoder();
                 RegisterAccount resg = new RegisterAccount
                 {
                   
                     UserName = request.UserName,
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.PasswordHash),
+                    PasswordHash = encoder.Encode(request.PasswordHash),
                     Email = request.Email,
                     Phone = request.Phone,
                     Fullname = request.Fullname,

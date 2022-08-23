@@ -9,7 +9,7 @@ namespace Reponsitory.Interface
 {
     public interface IUserReponsitory
     {
-        Task<bool> LoginAccount(LoginModel request);
+        Task<bool> LoginAccount(string username, string password);
         Task<bool> Registation (RegisterAccount request);
     }
 }

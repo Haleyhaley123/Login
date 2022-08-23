@@ -1,9 +1,13 @@
 ﻿using Domain.BaseModel;
 using Domain.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Reponsitory.Interface;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using WebDemo.Constants;
+using WebDemo.Utilities;
 
 namespace WebDemo.Controllers.Account
 {
@@ -16,11 +20,12 @@ namespace WebDemo.Controllers.Account
         {
             _iUserReponsitory = iUserReponsitory;
         }
+        [AllowAnonymous]
         [HttpPost("api/loginAccount/Login")]
-        public async Task<ActionResult<WsResponse>> LoginAccount([FromBody] LoginModel request)
+        public async Task<ActionResult<WsResponse>> LoginAccount(string username, string password)
         {
             WsResponse response = new WsResponse();
-            var data = await _iUserReponsitory.LoginAccount(request);
+            var data = await _iUserReponsitory.LoginAccount(username, password);
             if (data == false)
             {
                 response.Status = WsConstants.MessageLoginFaild;
