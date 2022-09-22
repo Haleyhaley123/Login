@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "ytyKezQ6rk5X6irbe0v8gTvyDItW/isSpiie8cWzwIA=",
+  "Hash": "52voblLwLg5Q1Hu09UWTt1Sa5QOJKnxk+PdtGfAk5Ew=",
   "Source": "Admin",
   "BasePath": "_content/Admin",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\HA\\Login\\WebDemo\\WebDemo.csproj",
+      "Version": 2,
+      "Source": "WebDemo",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Admin\\wwwroot",
