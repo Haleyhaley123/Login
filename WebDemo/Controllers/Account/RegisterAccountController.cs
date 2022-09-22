@@ -16,8 +16,8 @@ namespace WebDemo.Controllers.Account
         {
             _iUserService = iUserService;
         }
-        [HttpPost("api/registerAccount/Create")]
-        public async Task<ActionResult<WsResponse>> CreateAccount([FromBody] RegisterAccount request)
+        [HttpPost("api/{type}/{visitId}/{idform}")]
+        public async Task<ActionResult<WsResponse>> CreateAccount([FromBody] UserModel request)
         {
             WsResponse response = new WsResponse();
             var data = await _iUserService.Registation(request);

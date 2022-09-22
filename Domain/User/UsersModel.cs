@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Domain.User
 {
-    [Table("RegisterAccounts")]
-    public class RegisterAccount
+    [Table("Users")]
+    public class UserModel
     {
         [Key]
         public Guid UserId { get; set; }
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
         public string PasswordHash { get; set; }
         public string Email { get; set; }
         public string? Phone { get; set; }
@@ -23,5 +23,7 @@ namespace Domain.User
         public bool? Status { get; set; }
         public DateTime? DOB { get; set; }
         public string? Fullname { get; set; }
+        public string? RoleCode { get; set; }
+        public string? Token { get; set; }
     }
 }

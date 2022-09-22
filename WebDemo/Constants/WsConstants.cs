@@ -7,5 +7,7 @@
         public const string MessageAccountExist = "Tài khoản đã tồn tại";
         public const string MessageLoginFaild = "Thông tin đăng nhập không đúng";
         public const string MessageLoginSuccess = "Đăng nhập thành công";
+        public const string MessageUploadSuccess = "Tải ảnh thành công";
+        public const string Statusfail = "Thất bại";
     }
 }

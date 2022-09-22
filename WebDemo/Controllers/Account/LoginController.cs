@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using WebDemo.Constants;
 using WebDemo.Utilities;
+using static Domain.DBContext.DBContext;
 
 namespace WebDemo.Controllers.Account
 {
@@ -17,41 +18,73 @@ namespace WebDemo.Controllers.Account
     public class LoginController : BaseApiController
     {
         private readonly IUserReponsitory _iUserReponsitory;
-        public LoginController(IUserReponsitory iUserReponsitory)
+        private readonly IConfiguration _configuration;
+        private readonly DatabaseContext _dataBaseContext;
+        public LoginController(
+            IUserReponsitory iUserService, IConfiguration configuration, DatabaseContext dataBaseContext
+            )
         {
-            _iUserReponsitory = iUserReponsitory;
+            _configuration = configuration;
+            _iUserReponsitory = iUserService; ;
+            _dataBaseContext = dataBaseContext;
         }
-
         [HttpPost("api/loginAccount/Login")]
         public async Task<ActionResult<WsResponse>> LoginAccount(string username, string password)
         {
             WsResponse response = new WsResponse();
             var data = await _iUserReponsitory.LoginAccount(username, password);
-            if (data == false)
+            if (data != null)
             {
-                response.Status = WsConstants.MessageLoginFaild;
-            }else
-            {
-                string token = CreateToken(username);
-                response.Status = WsConstants.MessageLoginSuccess;
+                var token = "";
+                var rolecode = "abcd";
+                try {
+                    var authClaims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, data.UserName),
+                    new Claim(ClaimTypes.Role, rolecode),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                };
+                    if(data.RoleCode != null)
+                    {
+                        rolecode = data.RoleCode.ToString();
+                        authClaims.Add(new Claim(ClaimTypes.Role, rolecode));
+                    }
+                    token = CreateToken(data);
+                }
+                catch
+                {
+                    
+                }
+                
                 response.Data = token;
+                response.Status = WsConstants.MessageLoginSuccess; 
+            }
+            else
+            {
+                
+                response.Status = WsConstants.MessageLoginFaild;
+                
             }
             return response;
         }
-        private string CreateToken (string username)
+        private string CreateToken (UserModel data)
         {
             List<Claim> claims = new List<Claim>() 
             { 
-                new Claim(ClaimTypes.Name, username),
+                new Claim(ClaimTypes.Name, data.UserName),
             };
             var secretKey = "mysupersecret_secretkey!123";
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires:DateTime.Now.AddMinutes(2),
+                expires:DateTime.Now.AddHours(2),
                 signingCredentials: creds);
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+            data.Token = jwt;
+            _dataBaseContext.Users.Update(data);
+            _dataBaseContext.SaveChangesAsync();
+
             return jwt;
         }
     }
