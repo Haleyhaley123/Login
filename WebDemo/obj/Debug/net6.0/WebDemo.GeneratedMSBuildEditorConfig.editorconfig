@@ -11,6 +11,6 @@ build_property.RootNamespace = WebDemo
 build_property.ProjectDir = D:\HA\Login\WebDemo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\HA\Login\WebDemo
 build_property._RazorSourceGeneratorDebug = 

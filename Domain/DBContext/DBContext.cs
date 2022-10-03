@@ -17,11 +17,7 @@ namespace Domain.DBContext
             : base(options)
             {
 
-            }
-            protected override void OnModelCreating(ModelBuilder builder)
-            {
-                base.OnModelCreating(builder);
-            }
+            }           
             public DbSet<UserModel> Users { get; set; }
             //public DbSet<UploadImage> UpLoadImages { get; set; }
             public DbSet<RolesModel> Roles { get; set; }

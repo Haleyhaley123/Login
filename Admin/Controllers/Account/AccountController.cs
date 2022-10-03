@@ -66,7 +66,7 @@ namespace Admin.Controllers.Account
                 response.Status = WsConstants.MessageLoginFaild;
 
             }
-            return View(response);
+            return Json(response);
         }
         private string CreateToken(UserModel data)
         {
